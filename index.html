@@ -1,1 +1,286 @@
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Portfolio Aubin Altieri</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.ico" rel="icon">
+    <link class="bi bi-browser-chrome" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+            <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        </ul>
+    </nav>
+
+</header>
+<!-- ======= End Header ======= -->
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        var allowed_brower = ['chrome', 'firefox', 'mozilla'];
+        if (allowed_brower.indexOf($.browser.name) === -1) {
+            alert("Votre navigateur n'est pas compatible avec ce site. Veuillez installer une version récente de Google Chrome, Firefox ou Microsoft Edge pour y accéder.")
+        }
+    });
+
+</script>
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex flex-column justify-content-center">
+
+    <script type="module" src="assets/js/spline.js"></script>
+    <div class="container d-flex align-items-center justify-content-between" data-aos="zoom-in" data-aos-delay="100" style="text-align: left;">
+        <div>
+            <h1>Aubin ALTIERI</h1>
+            <p style="font-size: 30px;">I'm studying computer science at Ensimag</p>
+        </div>
+        <div class="circle-container">
+            <div class="bubbles-container">
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                    const bubbleContainer = document.querySelector('.bubbles-container');
+
+                    for (let i = 0; i < 10; i++) {
+                        let bubble = document.createElement('div');
+                        bubble.classList.add('bubble');
+                        bubble.style.setProperty('--i', i); 
+                        let x = Math.random() * 100;
+                        let y = Math.random() * 100;
+                        bubble.style.left = `${x}%`;
+                        bubble.style.top = `${y}%`;
+
+                        bubbleContainer.appendChild(bubble);
+                    }
+                });
+                </script>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- ======= End Hero Section ======= -->
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>About</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center" style="padding-right: 60px;">
+                <img src="assets/img/Ensimag.png" class="img-fluid" alt="" style="margin-bottom: 170px;">
+                <img src="assets/img/hobbies.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3>Second year student at Grenoble INP - Ensimag.</h3>
+                <p>
+                    Grenoble INP - Ensimag is a top engineering school in France, specializing in computer science and applied mathematics. Founded in 1960, it is part of the University Grenoble Alpes (UGA) and recognized internationally. Located in a dynamic ecosystem of research labs and industries, Ensimag trains engineers with a dual expertise in mathematics and computer science, preparing them for careers in diverse sectors such as energy, finance, and technology.
+                </p>
+                <p>
+                    The MMIS program (Modeling, Mathematics, and Computer Science for Data Science) focuses on training engineers in numerical modeling, multimedia, scientific computing, and statistical analysis. Graduates pursue careers as consulting or research engineers, applying their skills to complex systems across various industries.
+                </p>
+                <div class="row", style="padding-top:50px;">
+                    <h3>Hobbies and life</h3>
+                    <div class="col-lg-6" style="padding-top: 50px;">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong>
+                                <span>15 September 2003</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Cities:</strong>
+                                <span>Paris and Grenoble</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" style="padding-top: 50px;">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                        </ul>
+                    </div>
+                    <p><em>WORK IN PROGRESS</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======= End About Section ======= -->
+
+
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="100" style="display: flex; justify-content: center;">
+            <embed src="assets/pdf/resume.pdf" type="application/pdf" width="900px" height="1270px" />
+        </div>
+    </div>
+</section>
+<!-- ======= Resume Section ======= -->
+
+<!-- ======= Portfolio Section ======= -->
+<!-- <section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Portfolio</h2>
+            <p>I am passionate about web development as well as 3d, computer science and have worked on various
+                personal projects to improve my skills and discover new technologies. Here are my projects, which
+                represent my creativity, my rigor and my commitment to technical excellence.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-game">Game</li>
+                    <li data-filter=".filter-3d">3d</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Website annual project </h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Joshua-Tangtonghi/Annual-project-2022"
+                                title="Github link"><i class="bi bi-github"></i></a>
+                            <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="Website annual project "><i class="bx bx-plus"></i></a>
+                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='annual_projetc_2022.html' title='Portfolio Details'><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/pokemon1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Pokedex wesite</h4>
+                        <p>Web</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Joshua-Tangtonghi/pokedex"
+                                title="Github link"><i class="bi bi-github"></i></a>
+                            <a href="assets/img/portfolio/pokemon1.jpg" data-gallery="portfolioGallery"
+                                class="portfolio-lightbox" title="Pokedex website"><i class="bx bx-plus"></i></a>
+                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='pokemon.html' title='Portfolio Details'><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-game">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/Tetris1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>Tetris</h4>
+                        <p>Game</p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/Joshua-Tangtonghi/C-Tetris-Multiplayer"
+                                title="Github link"><i class="bi bi-github"></i></a>
+                            <a href="assets/img/portfolio/Tetris1.jpg" data-gallery="portfolioGallery "
+                                class="portfolio-lightbox" title="Game"><i class="bx bx-plus"></i></a>
+                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='tetris.html' title='Portfolio Details'><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-3d">
+                <div class="portfolio-wrap">
+                    <img src="assets/img/portfolio/Stage1.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                        <h4>3D Internship 2022</h4>
+                        <p>3D</p>
+                        <div class="portfolio-links">
+                            <a href="assets/img/portfolio/Stage1.jpg" data-gallery="portfolioGallery "
+                                class="portfolio-lightbox" title="3D"><i class="bx bx-plus"></i></a>
+                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='stage_3d.html' title='Portfolio Details'><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</section> -->
+
+<!-- ======= End Portfolio Section ======= -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <h3>Aubin Altieri</h3>
+        <h2>Contact</h2>
+        <p>Mail: <a href="mailto:aubin.altieri@grenoble-inp.org">aubin.altieri@grenoble-inp.org</a> <br> 06 49 88 54 41</p>
+    </div>
+</footer>
+<!-- ======= End Footer ======= -->
+
+<div id="preloader"></div>
+<a href="index.html#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        var allowed_brower = ['chrome', 'firefox', 'safari', 'mozilla'];
+        if (allowed_brower.indexOf($.browser.name) === -1) {
+            alert("Votre navigateur n'est pas compatible avec ce site. Veuillez installer une version récente de Google Chrome, Firefox ou Microsoft Edge pour y accéder.")
+        }
+    });
+</script>
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

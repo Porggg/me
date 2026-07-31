@@ -6,7 +6,15 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #ffff;
-  background-color: #1d1d1d;}
+  background: linear-gradient(135deg, rgba(11, 18, 32, 0.95), rgba(17, 24, 39, 0.8));
+}
+
+#about,
+#resume,
+#portfolio,
+#footer {
+  background: linear-gradient(135deg, rgba(11, 18, 32, 0.95), rgba(17, 24, 39, 0.8));
+}
 
 canvas{
   position:absolute;
@@ -317,87 +325,6 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-.circle-container {
-  position: absolute; /* Positionne de manière absolue par rapport au parent */
-  width: 100vw; /* Utilise toute la largeur de la vue */
-  height: 100vh; /* Utilise toute la hauteur de la vue */
-  border-radius: 50%;
-  overflow: hidden; /* Confinement des bulles dans le cercle */
-  background-color: transparent; /* Cercle invisible */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1; /* Assure que le conteneur des bulles est derrière le texte */
-}
-
-/* Texte dans la section Hero */
-#hero .container {
-  position: relative; /* Positionne relativement par rapport au parent */
-  z-index: 2; /* Assure que le texte est au-dessus du conteneur des bulles */
-}
-
-
-/* Bubbles */
-.bubbles-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.bubble {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #23a638; /* Bleu nuage */
-  border-radius: 50%;
-  animation: bubble 8s infinite ease-in-out;
-  opacity: 0;
-  animation-delay:  calc(-1s * var(--i));
-}
-
-.bubble:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  animation-duration: 6s;
-  background-color: #fff; /* Blanc */
-}
-
-.bubble:nth-child(3) {
-  width: 80px;
-  height: 80px;
-  animation-duration: 10s;
-  background-color: #23a638;
-}
-
-.bubble:nth-child(4) {
-  width: 50px;
-  height: 50px;
-  animation-duration: 4s;
-  background-color: #fff;
-}
-
-@keyframes bubble {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(400px, -400px) scale(1.5); /* Déplacement ajusté pour le cercle plus grand */
-    opacity: 0;
-  }
-}
-
-/* Positionnement des bulles dans le grand cercle */
-.bubble:nth-child(1) { left: 20%; top: 40%; }
-.bubble:nth-child(2) { left: 60%; top: 20%; }
-.bubble:nth-child(3) { left: 70%; top: 70%; }
-.bubble:nth-child(4) { left: 40%; top: 60%; }
-
-
-/* #hero p span {
-  color: #ff00e6;
-  letter-spacing: 1px;
-} */
 
 /* #hero .social-links {
   margin-top: 30px;
@@ -437,8 +364,32 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0 50px;
   overflow: hidden;
+  margin: 0;
+}
+
+.resume-frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resume-pdf {
+  display: block;
+  width: min(100%, 900px);
+  height: auto;
+  aspect-ratio: 210 / 297;
+  min-height: 600px;
+  border: 0;
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .resume-pdf {
+    width: 100%;
+    min-height: 480px;
+  }
 }
 
 .section-title {

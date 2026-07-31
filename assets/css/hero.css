@@ -1,0 +1,116 @@
+#hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  padding-left: clamp(90px, 10vw, 150px);
+  background:
+    radial-gradient(circle at top left, rgba(35, 166, 56, 0.22), transparent 35%),
+    linear-gradient(135deg, rgba(11, 18, 32, 0.95), rgba(17, 24, 39, 0.8));
+}
+
+#hero .container {
+  position: relative;
+  z-index: 2;
+  gap: 0.75rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.05;
+  color: #23a638;
+  letter-spacing: -0.04em;
+}
+
+#hero p {
+  margin: 18px 0 0;
+  color: var(--text);
+  font-size: clamp(1.1rem, 2.2vw, 1.9rem);
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-visual {
+  position: relative;
+  width: min(36vw, 420px);
+  min-width: 260px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubbles-container {
+  position: relative;
+  width: 100%;
+  height: min(44vw, 380px);
+  min-height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: radial-gradient(circle at center, rgba(67, 220, 93, 0.08), rgba(17, 24, 39, 0.12) 58%, transparent 100%);
+}
+
+.bubble {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: rgba(35, 166, 56, 0.45);
+  box-shadow: inset -8px -8px 14px rgba(255, 255, 255, 0.05), 0 0 18px rgba(35, 166, 56, 0.12);
+  opacity: 0;
+  animation: bubble-rise var(--duration) ease-in infinite;
+  animation-delay: var(--delay);
+}
+
+.bubble:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes bubble-rise {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.9);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--opacity, 0.45);
+  }
+  60% {
+    opacity: var(--opacity, 0.45);
+  }
+  100% {
+    transform: translate3d(var(--dx), var(--dy), 0) scale(1.18);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero {
+    padding-top: 90px;
+  }
+
+  #hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-visual {
+    width: min(75vw, 420px);
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    min-height: 90vh;
+  }
+
+  .bubbles-container {
+    height: 220px;
+  }
+
+  .bubble {
+    filter: blur(0.5px);
+  }
+}

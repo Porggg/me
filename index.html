@@ -35,9 +35,8 @@
     <nav id="navbar" class="navbar nav-menu">
         <ul>
             <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-            <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+            <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
             <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-            <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
         </ul>
     </nav>
 
@@ -63,32 +62,145 @@
 </section>
 <!-- ======= End Hero Section ======= -->
 
-<!-- ======= About Section ======= -->
-<section id="about" class="about">
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-            <h2>About</h2>
+            <h2>Portfolio</h2>
+            <p>School and personal projects, from hardware design to machine learning. Click on a project to see more.</p>
         </div>
 
         <div class="row">
-            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-center" style="padding-right: 60px;">
-                <img src="assets/img/Ensimag.png" class="img-fluid" alt="" loading="lazy" style="margin-bottom: 170px;">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-pp">Personal Projects</li>
+                    <li data-filter=".filter-sp">School Projects</li>
+                </ul>
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-                <h3>Third year student at Grenoble INP - Ensimag.</h3>
-                <p>
-                    Grenoble INP - Ensimag is an engineering school in France, specializing in computer science and applied mathematics. Founded in 1960, it is part of the University Grenoble Alpes (UGA) and recognized internationally. 
-                </p>
-                <p>
-                    The MMIS program (Modeling, Mathematics, and Computer Science for Data Science) focuses on training engineers in numerical modeling, multimedia, scientific computing, and statistical analysis.
-                </p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp">
+                <article class="project-card">
+                    <a href="machine-learning.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Machine Learning, Geometrically">
+                        <span class="project-badge">Personal</span>
+                        <img src="assets/img/portfolio/machine-learning/svm-rbf.jpg" alt="SVM with an RBF kernel: decision boundary and 3D score landscape" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">September 2026</span>
+                        <h3>Machine Learning, Geometrically</h3>
+                        <p>An interactive course website for my ML class at POSTECH: linear and logistic regression and SVMs explained through manipulable 2D/3D scenes, step-by-step proofs and exam-style exercises.</p>
+                        <ul class="project-tags"><li>JavaScript</li><li>Three.js</li><li>KaTeX</li><li>Linear algebra</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                            <a href="https://porggg.github.io/machine-learning/" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Live</a>
+                            <a href="https://github.com/Porggg/machine-learning" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
             </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp">
+                <article class="project-card">
+                    <a href="computer-vision.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Computer Vision Algorithms">
+                        <span class="project-badge">Personal</span>
+                        <img src="assets/img/portfolio/computer-vision/harris_corners.jpg" alt="Harris corners detected on a building facade" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">September 2026</span>
+                        <h3>Computer Vision Algorithms</h3>
+                        <p>Classic computer vision algorithms implemented from scratch with NumPy: convolutions, Gaussian blur, Canny-style edge detection and Harris corner detection, all covered by pytest.</p>
+                        <ul class="project-tags"><li>Python</li><li>NumPy</li><li>pytest</li><li>GitHub Actions</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                            <a href="https://github.com/Porggg/computer-vision" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp">
+                <article class="project-card">
+                    <a href="raft.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Raft 2D">
+                        <span class="project-badge">Personal</span>
+                        <img src="assets/img/portfolio/raft/raft.png" alt="Pixel-art character standing on a small raft in the middle of the sea" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">Work in progress</span>
+                        <h3>Raft 2D</h3>
+                        <p>A 2D survival game inspired by Raft: move around the ocean, collect drifting planks and expand your raft tile by tile from a building menu.</p>
+                        <ul class="project-tags"><li>Python</li><li>Tkinter</li><li>Pixel art</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                            <a href="https://github.com/Porggg/raft-like-2d" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-sp">
+                <article class="project-card">
+                    <a href="plc.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Graphical User Interface (GUI)">
+                        <span class="project-badge">School</span>
+                        <img src="assets/img/portfolio/PLC.png" alt="Widgets drawn with the GUI library" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">April – May 2024</span>
+                        <h3>Graphical User Interface (GUI)</h3>
+                        <p>A C library that simplifies GUI programming: drawing and configuring widgets, managing their on-screen geometry and handling keyboard and mouse events.</p>
+                        <ul class="project-tags"><li>C</li><li>Git</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-sp">
+                <article class="project-card">
+                    <a href="cep.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Processor Design and Operation">
+                        <span class="project-badge">School</span>
+                        <img src="assets/img/portfolio/CEP.PNG" alt="Processor running an application with screen display" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">March 2024</span>
+                        <h3>Processor Design and Operation</h3>
+                        <p>A RISC-V processor designed in VHDL (control unit and datapath), with jumps and interrupts, integrated in a full system running an application with display.</p>
+                        <ul class="project-tags"><li>VHDL</li><li>RISC-V</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-pp">
+                <article class="project-card">
+                    <a href="minesweeper.html" class="project-media portfolio-details-lightbox" data-glightbox="type: external" title="Minesweeper">
+                        <span class="project-badge">Personal</span>
+                        <img src="assets/img/portfolio/demineur.PNG" alt="Minesweeper game board" loading="lazy">
+                    </a>
+                    <div class="project-body">
+                        <span class="project-date">High school</span>
+                        <h3>Minesweeper</h3>
+                        <p>A fully functional Minesweeper with several difficulty modes and rule variants, made with a friend.</p>
+                        <ul class="project-tags"><li>Python</li></ul>
+                        <div class="project-links">
+                            <button type="button" class="project-link-primary" data-open-details>Details</button>
+                            <a href="https://github.com/Porggg/minesweeper" target="_blank" rel="noopener"><i class="bi bi-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
         </div>
     </div>
 </section>
-<!-- ======= End About Section ======= -->
 
+<!-- ======= End Portfolio Section ======= -->
 
 <!-- ======= Resume Section ======= -->
 <section id="resume" class="resume">
@@ -103,91 +215,7 @@
         </div>
     </div>
 </section>
-<!-- ======= Resume Section ======= -->
-
-<!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio section-bg">
-    <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>I am passionate about web development as well as 3d, computer science and have worked on various
-                personal projects to improve my skills and discover new technologies. Here are my projects, which
-                represent my creativity, my rigor and my commitment to technical excellence.</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-                <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-pp">Personnal Projects</li>
-                    <li data-filter=".filter-sp">School Projetcs</li>
-                </ul>
-            </div>
-        </div> 
-
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-sp">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/CEP.PNG" class="img-fluid" alt="" loading="lazy">
-                    <div class="portfolio-info">
-                        <h4>Processor Design and Operation</h4>
-                        <p>School Project</p>
-                        <div class="portfolio-links">
-                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='cep.html' title='Portfolio Details'><i class="bx bx-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-sp">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/PLC.png" class="img-fluid" alt="" loading="lazy">
-                    <div class="portfolio-info">
-                        <h4>Graphical User Interface (GUI)</h4>
-                        <p>School Project</p>
-                        <div class="portfolio-links">
-                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='plc.html' title='Portfolio Details'><i class="bx bx-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-pp">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/demineur.PNG" class="img-fluid" alt="" loading="lazy">
-                    <div class="portfolio-info">
-                        <h4>Minesweeper</h4>
-                        <p>Personnal Project</p>
-                        <div class="portfolio-links">
-                            <a href="https://github.com/Porggg/minesweeper"><i class="bi bi-github"></i></a>
-                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='minesweeper.html' title='Portfolio Details'><i class="bx bx-plus"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-3d">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/Stage1.jpg" class="img-fluid" alt="">
-                    <div class="portfolio-info">
-                        <h4>3D Internship 2022</h4>
-                        <p>3D</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/Stage1.jpg" data-gallery="portfolioGallery "
-                                class="portfolio-lightbox" title="3D"><i class="bx bx-plus"></i></a>
-                            <a class='portfolio-details-lightbox' data-glightbox='type: external' href='stage_3d.html' title='Portfolio Details'><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>   -->
-        </div> 
-    </div>
-</section>
-
-<!-- ======= End Portfolio Section ======= -->
+<!-- ======= End Resume Section ======= -->
 
 <div id="preloader"></div>
 <a href="index.html#" class="back-to-top d-flex align-items-center justify-content-center"><i

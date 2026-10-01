@@ -170,7 +170,8 @@
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item'
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
       });
 
       let portfolioFilters = select('#portfolio-flters li', true);
@@ -208,6 +209,13 @@
     width: '90%',
     height: '90vh'
   });
+
+  /**
+   * "Details" buttons open the lightbox of their project card
+   */
+  on('click', '[data-open-details]', function(e) {
+    this.closest('.project-card').querySelector('.portfolio-details-lightbox').click()
+  }, true);
 
   /**
    * Portfolio details slider
